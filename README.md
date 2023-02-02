@@ -16,7 +16,7 @@ Nesse projeto foi utilizado algumas tecnologias, sendo elas:
 
 Mock-server
 
-- [json-server](https://github.com/typicode/json-server)
+[Mock Service Worker](https://mswjs.io/)
 
 UI, Mapa e os gráficos
 
@@ -39,19 +39,21 @@ Testes
 
 ### Instalação e execução
 
+> :warning: A versão do node para rodar o projeto é a versão 18+ lts
+
 Para instalar as dependências, é só executar o comando
 
 ```bash
 npm install
 ```
 
-Após instalar as dependências do projeto, é só executar os comandos na ordem
+Antes de executar o projeto, crie um arquivo .env na raiz do projeto e adicione a seguinte configuração:
 
 ```bash
-npm run dbo:run
+VITE_API_DEV_URL=http://localhost:5173
 ```
 
-e executar o projeto
+Após instalar as dependências do projeto, é só executar o projeto
 
 ```bash
 npm run dev
